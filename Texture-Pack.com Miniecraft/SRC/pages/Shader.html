@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="../img/icon/channels4_profile.jpg" />
+  <link rel="stylesheet" type="text/css" href="../Style/Index.css" />
+  <link rel="stylesheet" type="text/css" href="../Style/Top-barra.css" />
+  <link rel="stylesheet" type="text/css" href="../Style/Nav-Menu.css" />
+  <link rel="stylesheet" type="text/css" href="../Style/mainConten.css" />
+  <script src="./SRC/JS/Index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdowns = document.querySelectorAll(".dropdown2");
+
+      dropdowns.forEach(function (dropdown) {
+        let isActive = false;
+
+        dropdown.addEventListener("click", function () {
+          if (isActive) {
+            this.classList.remove("active");
+          } else {
+            this.classList.add("active");
+          }
+
+          isActive = !isActive;
+        });
+      });
+
+      // Cerrar menú al hacer clic fuera del mismo
+      document.addEventListener("click", function (event) {
+        if (!event.target.closest(".dropdown2")) {
+          dropdowns.forEach(function (dropdown) {
+            dropdown.classList.remove("active");
+          });
+        }
+      });
+    });
+  </script>
+  <title>Minecraft Shader</title>
+</head>
+
+<body class="conteiner">
+  <header class="row header-conteiner">
+    <div class="header-row">
+      <div class="header-col">
+        <div class="top-bar top-bar-align-right">
+          <div class="inside-top-bar grid-container grid-parent">
+            <p class="">
+              <a href="https://www.youtube.com/@texture-packs" class="class">
+                <img class="social-sprites" src="../img/icon/youtube.png" alt="youtube">
+              </a>
+              <a href="https://discord.com/invite/q5Jwa85sDb" class="class">
+                <img class="social-sprites" src="../img/icon/discord.png" alt="discord">
+              </a>
+              <a href="https://www.tiktok.com/@texturepackscom/" class="class">
+                <img class="social-sprites" src="../img/icon/twitter.png" alt="twitter">
+              </a>
+              <a href="https://www.instagram.com/texturepackscom/" class="class">
+                <img class="social-sprites" src="../img/icon/instagram.png" alt="instagram">
+              </a>
+              <a href="https://www.pinterest.com/texturepackscom/" class="class">
+                <img class="social-sprites" src="../img/icon/pinterest.png" alt="pinterest">
+              </a>
+              <a href="https://www.tiktok.com/@texturepackscom/" class="class">
+                <img class="social-sprites" src="../img/icon/tik-tok.png" alt="tik-tok">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="header-row main-navigation">
+      <div class="inside-navigation grid-container grid-parent">
+        <div class="main-nav">
+          <ul class="horizontal-list">
+            <li class="dropdown menu-item-has-children">
+              <a href="../../Index.html">
+                Texture Packs
+                <span role="presentation" class="dropdown-menu-toggle">
+                  <span class="gp-icon icon-arrow">
+                    <svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                      height="1em">
+                      <path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 
+                          2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 
+                          2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 
+                          111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 
+                          1.7 2.833 4.249 2.833 6.515z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <ul class="dropdown-content sub-menu">
+                <li class="dropdown-horizontal menu-item-has-children">
+                  <a href="../../Index.html">
+                    Texture Packs 1.20
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-content-horizontal sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.20.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-horizontal menu-item-has-children">
+                  <a href="../../Index.html">
+                    Texture Packs 1.19
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-content-horizontal sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.19.4
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.19.3
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.19.2
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.19.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-horizontal menu-item-has-children">
+                  <a href="../../Index.html">
+                    Texture Packs 1.18
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-content-horizontal sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.18.2
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="../../Index.html">
+                        Texture Packs 1.18.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-horizontal menu-item-has-children">
+                  <a href="https://texture-packs.com/minecraft-1-20-texture-packs/">
+                    Texture Packs 1.17
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="dropdown-content-horizontal sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Texture Packs 1.17.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class=" menu-item-has-children">
+                  <a href="../../Index.html">
+                    Texture Packs 1.12
+                  </a>
+                </li>
+                <li class=" menu-item-has-children">
+                  <a href="../../Index.html">
+                    Texture Packs 1.8
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-horizontal menu-item-has-children">
+              <a href="./Shader.html">
+                Shaders
+                <span role="presentation" class="dropdown-menu-toggle">
+                  <span class="gp-icon icon-arrow">
+                    <svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                      height="1em">
+                      <path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 
+                                      2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 
+                                      2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 
+                                      111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 
+                                      1.7 2.833 4.249 2.833 6.515z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <ul class="dropdown-content-horizontal sub-menu">
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Shader.html">
+                    Shaders 1.20
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="./Shader.html">
+                        Shaders 1.20.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="https://texture-packs.com/minecraft-1-20-texture-packs/">
+                    Shaders 1.19
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Shaders 1.19.4
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Shaders 1.19.3
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Shaders 1.19.2
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Shaders 1.19.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Shader.html">
+                    Shaders 1.18
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="./Shader.html">
+                        Shaders 1.18.2
+                      </a>
+                    </li>
+                    <li class="menu-item dropdown-content">
+                      <a href="./Shader.html">
+                        Shaders 1.18.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="https://texture-packs.com/minecraft-1-20-texture-packs/">
+                    Shaders 1.17
+                    <span role="presentation" class="dropdown-menu-toggle">
+                      <span class="gp-icon icon-arrow-right">
+                        <svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                          height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round"
+                          stroke-miterlimit="1.414">
+                          <path
+                            d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z"
+                            fill-rule="nonzero">
+                          </path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                  <ul class="sub-menu">
+                    <li class="menu-item dropdown-content">
+                      <a href="https://texture-packs.com/minecraft-1-20-1-texture-packs/">
+                        Shaders 1.17.1
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Shader.html">
+                    Shaders 1.16.5
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown menu-item-has-children">
+              <a href="./Realistics.html">
+                Realistic
+              </a>
+            </li>
+            <li class="dropdown menu-item-has-children">
+              <a href="./pvp.html">
+                pvp
+              </a>
+            </li>
+            <li class="dropdown menu-item-has-children">
+              <a href="./mcpe.html">
+                Mcpe
+              </a>
+            </li>
+            <li class="dropdown menu-item-has-children">
+              <a href="./Minecraft.html">
+                Minecraft
+                <span role="presentation" class="dropdown-menu-toggle">
+                  <span class="gp-icon icon-arrow">
+                    <svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                      height="1em">
+                      <path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 
+                                      2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 
+                                      2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 
+                                      111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 
+                                      1.7 2.833 4.249 2.833 6.515z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <ul class="sub-menu">
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20.30.20
+                  </a>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20.20.23
+                  </a>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20.20.22
+                  </a>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20.12
+                  </a>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20.20.21
+                  </a>
+                </li>
+                <li class="dropdown menu-item-has-children">
+                  <a href="./Minecraft.html">
+                    Minecraft 1.20
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="menu-item-wpml-ls-2-de"
+              class="derecha2 menu-item wpml-ls-slot-2 wpml-ls-item wpml-ls-item-de wpml-ls-menu-item wpml-ls-first-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-2-de">
+              <a href="Index.html">
+                <img class="wpml-ls-flag lazyloaded" src="../img/icon/Flag English Language.png" alt="Englisch"
+                  data-src="./SRC/img/icon/Flag English Language.png" decoding="async">
+                <noscript>
+                  <img class="wpml-ls-flag" src="../img/icon/DE.png" alt="German" data-eio="l" />
+                </noscript>
+              </a>
+            </li>
+            <li class="derecha1 dropdown2 search-item menu-item-align-right">
+              <a aria-label="Open Search Bar" href="#">
+                <span class="gp-icon icon-search">
+                  <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    height="1em">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 
+                      208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 
+                      129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 
+                      9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z">
+                    </path>
+                  </svg>
+                  <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em"
+                    height="1em">
+                    <path
+                      d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z">
+                    </path>
+                  </svg>
+                </span>
+              </a>
+              <ul class="dropdown2-content sub-menu">
+                <li class="menu-item dropdown2-content">
+                  <form method="get" class="search-form navigation-search nav-search-active" action="">
+                    <input type="search" class="search-field" value="" name="s" title="Search">
+                  </form>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="site grid-container container hfeed grid-parent" id="page">
+    <div class="site-content" id="content">
+      <div class="content-area grid-parent mobile-grid-100 grid-75 tablet-grid-75" id="primary">
+        <main class="site-main" id="main">
+          <article id="post-20" class="post-20 page type-page status-publish has-post-thumbnail"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+              <header class="entry-header" aria-label="Content">
+                <h1 class="entry-title" itemprop="headline">Minecraft Shaders</h1>
+              </header>
+              <div class="entry-content" itemprop="text">
+                <div class="tp-category-description"> <strong>Minecraft shaders</strong> and <strong>shader
+                    packs</strong> make the
+                  gameplay more realistic compared to texture packs. Unlike texture mods that only alter textures,
+                  shaders add new
+                  shadows, animated water, and many more realism-themed features. All Minecraft shaders boast different
+                  effects and
+                  strengths. To offer an overview, we've compiled a list of the best shaders for Minecraft. With our
+                  selection, you can
+                  rediscover the game with an entirely new level of graphics. Browse the list and hit the download
+                  button!</div>
+                <div class="cart-conteiner pt-cv-wrapper">
+                  <div class="row">
+                    <div class="col xd">
+                      <div class="cvp-live-filter cvp-dropdown " id="" data-name="_orderby" data-sid="97aad6d52t">
+                        <label class="cvp-label">Filter</label>
+                        <select name="_orderby">
+                          <option value="">SORT BY</option>
+                          <option value="title">Title (A - Z)</option>
+                          <option value="title,desc">Title (Z - A)</option>
+                          <option value="date">Date (Oldest)</option>
+                          <option value="date,desc">Date (Newest)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div style="padding-right: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460"
+                            height="250" src="../img/Solas-shaders-400x228.jpg"
+                            class="pt-cv-thumbnail img-none no-lazyload  cvplazy" alt="Faithful Texture Pack"
+                            decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd"
+                            target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460"
+                            height="250" src="../img/Solas-shaders-400x228.jpg"
+                            class="pt-cv-thumbnail img-none no-lazyload  cvplazy" alt="Faithful Texture Pack"
+                            decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd"
+                            target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div style="padding-right: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div style="padding-right: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div style="padding-right: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div style="padding-right: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="padding-left: 10px;" class="col">
+                      <div class="pt-cv-pinmas">
+                        <a href="https://texture-packs.com/resourcepack/faithful-minecraft/"
+                          class="_self pt-cv-href-thumbnail pt-cv-thumb-default cvplbd" target="_self"><img width="460" height="250"
+                            src="../img/Solas-shaders-400x228.jpg" class="pt-cv-thumbnail img-none no-lazyload  cvplazy"
+                            alt="Faithful Texture Pack" decoding="async" style="opacity: 1;">
+                        </a>
+                        <div class="pt-cv-title">
+                          <a style="font-size: 20px; line-height: 1.3; color: #3d3d3d; font-weight: 600; display: block; text-align: center; clear: both;"
+                            href="https://texture-packs.com/resourcepack/faithful-minecraft/" class="_self cvplbd" target="_self">
+                            Faithful 32x
+                          </a>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="text-center pt-cv-pagination-wrapper">
+                      <ul class="pt-cv-pagination pt-cv-ajax pagination" data-totalpages="19" data-currentpage="1"
+                        data-sid="97aad6d52t" data-unid="" data-isblock="" data-postid="" data-disabled="1">
+                        <li class="cv-pageitem-first active"><a title="Go to first page">«</a></li>
+                        <li class="cv-pageitem-prev active"><a title="Go to previous page">‹</a></li>
+                        <li class="cv-pageitem-number active"><a title="Current page is 1">1</a></li>
+                        <li class="cv-pageitem-number"><a title="Go to page 2">2</a></li>
+                        <li class="cv-pageitem-number"><a title="Go to page 3">3</a></li>
+                        <li class="cv-pageitem-number"><a title="Go to page 4">4</a></li>
+                        <li class="cv-pageitem-number"><a title="Go to page 5">5</a></li>
+                        <li class="cv-pageitem-next"><a title="Go to next page">›</a></li>
+                        <li class="cv-pageitem-last"><a title="Go to last page">»</a></li>
+                      </ul>
+                      <div class="clear pt-cv-clear-pagination"></div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="tp-description">
+                      <h2 style="text-align: left;">Why use texture packs?</h2>
+                      <br>
+                      <p style="text-align: justify;">Sometimes, when playing a game that is designed to give you
+                        unlimited tasks and world-building
+                        abilities, spicing it up with mods and changes can keep things fun and interesting for more
+                        extended
+                        periods of time between expansion packs and DLC. That being said, there are various reasons to
+                        modify
+                        your experience using Minecraft texture packs, including:</p>
+                      <br>
+                      <div style="margin-left: 3rem;">
+                        <ul style="text-align: justify; right: 0%;">
+                          <li><strong>Accessibility: </strong>While most people take for granted their ability to see
+                            and
+                            operate their game without modifications, the visually disabled or those with processing
+                            disorders
+                            may need to make some alterations to participate. This can include texture packs to change
+                            the
+                            colors for the color blind or special packs for those with difficulty seeing properly in the
+                            dark.
+                          </li>
+                          <li><strong>For Fun: </strong>Sometimes modifications can simply be for fun. Some packs are
+                            made and
+                            used that have no real purpose and can sometimes greatly hinder gameplay. Why would you need
+                            to make
+                            your character a thousand times bigger? It doesn’t matter. Install that pack and see what
+                            happens.
+                            There are cursed texture packs that change the most obscure elements of the game, just
+                            because. Flip
+                            everything upside down. Change the color of the sky. Make the game how you want it to be.
+                          </li>
+                          <li><strong>To Change it Up: </strong>After playing a game for a long time, it is easy to get
+                            bored
+                            with the same mechanics and visuals. With Minecraft texture packs, players are able to make
+                            their
+                            gameplay easier or more difficult, depending on the type of pack installed. You can also add
+                            elements that make it visually different so that you’re not experiencing the same thing
+                            every day.
+                            With the modifications Minecraft texture packs offer, your gameplay can look different every
+                            time
+                            you play.</li>
+                        </ul>
+                      </div>
+                      <p style="text-align: justify;">Whatever the reason may be, texture packs for Minecraft and game
+                        modifications are a great way for
+                        players to experience the game in a slightly different way than the developers intended.</p>
+                      <br>
+                      <h2 style="text-align: left;">What is the difference between resource packs and texture packs?
+                      </h2>
+                      <br>
+                      <p style="text-align: justify;">For many, these two terms cause confusion. Colloquially, both
+                        terms mean the same thing, but
+                        technically, the differences are clear. First, the little previous history. Both names exist
+                        because
+                        until the full version 1.6 the name texture packs was used for resource packs. The renaming was
+                        done
+                        because resource packs have even more functions. Roughly speaking, the biggest difference is
+                        that
+                        resource packs can also be used to customize the Minecraft sounds. Furthermore, the complete
+                        structure
+                        of the file has also been revised. This change was very serious at that time because suddenly
+                        some
+                        texture packs were no longer compatible with the new Minecraft version. In the meantime, the new
+                        structure does not cause any more problems. We personally prefer to use the older name, because
+                        it is
+                        still widely used in the community and arouses nostalgia.
+                      </p>
+                      <br>
+                      <h2 style="text-align: left;">Are Minecraft texture packs free?</h2>
+                      <br>
+                      <p style="text-align: justify;">Most of the time in life, really great things are very expensive.
+                        With Minecraft texture packs, it’s
+                        different, because most of them don’t cost money. This fact is due to the fact that already
+                        since the
+                        Alpha version, some players published their creations for free on the internet. They just had
+                        fun
+                        editing textures, and nobody thought about charging money for it back then. Therefore, it is
+                        still
+                        common practice that the game textures are gratis for Java Edition.</p>
+                      <p style="text-align: justify;">However, there are of course some exceptions, but as a PC gamer,
+                        you should not pay attention to
+                        them. In contrast, the situation is slightly different with the Bedrock Edition. Right from the
+                        start,
+                        the Marketplace has been integrated, offering skin packages, worlds, mashup packages, and
+                        texture
+                        packs. The sales platform is there so that the creators can earn some money with their work. On
+                        some
+                        consoles, like PlayStation 4/5, you are unfortunately completely bound to the Marketplace. This
+                        is a
+                        bad thing because you have to spend Minecoins for each pack, which you can only get with real
+                        money.
+                        But the cross-platform availability is an advantage. In plain language, this means that if you
+                        bought
+                        a Texture Pack on a mobile device, you can use it also with your game console. A prerequisite is
+                        that
+                        you use the same Microsoft account.</p>
+                      <p style="text-align: justify;">Fortunately, there is a cool way to get free texture packs
+                        exclusively for Windows 10/11, iOS, and
+                        Android. Already when the official name was Minecraft PE, there were free MCPE texture packs. We
+                        don’t
+                        want to withhold these from you, and therefore you can find these packs in a separate category
+                        on our
+                        website. By the way, the origin of the Bedrock Edition is the Pocket Edition, which was
+                        optimized for
+                        mobile devices only. It’s cool to see that the modders include Apple, Windows, and Samsung
+                        users.</p>
+                      <br>
+                      <h2 style="text-align: left;">What is Texture-Packs.com?</h2>
+                      br
+                      <p style="text-align: justify;">Texture-Packs.com is a gaming website for Minecraft. This site was
+                        created by Minecraft fans who have
+                        been playing the game since 2013. We started with our YouTube channel and shortly after that
+                        with this
+                        website. Nowadays we are one of the most popular Minecraft community sites with visitors from
+                        all over
+                        the world. The website is user-friendly and easy to navigate, making it simple for players to
+                        find the
+                        perfect resource pack. Overall, our website is a great resource for Minecraft players looking to
+                        find,
+                        download and install new Minecraft texture packs.</p>
+                      <p style="text-align: justify;">Various people have contributed to this project and have published
+                        Minecraft mods, resource packs,
+                        and Minecraft news. Our current goal is to create the largest Minecraft texture pack index. Our
+                        focus
+                        is to create high-quality reviews and tutorials.</p>
+                      <br>
+                      <h2 style="text-align: left;">Is Texture-Packs.com safe?</h2>
+                      <br>
+                      <p style="text-align: justify;">The answer to this question is yes. Probably any website would
+                        claim that, but we also have facts to
+                        prove it. It is important to understand how our blog is structured. There are regular articles
+                        about
+                        texture packs, shaders, and mods. You can always download and install them yourself. However, we
+                        clearly differ from illegal websites, because we always use the original download links that are
+                        provided by the author. You can be sure that the files do not contain malware. Mostly MediaFire,
+                        Dropbox, or MEGA are used for file hosting and all check the files for viruses. We also use a
+                        virus
+                        scanner again, so that all texture pack files are absolutely safe. The Texture-Packs.com team
+                        wants to
+                        reduce the risk for the user to a minimum.</p>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <iframe width="972" height="547" src="https://www.youtube.com/embed/pc7yfeRvODU?si=ZTSc2kZYE93qGChq"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div class="widget-area sidebar is-right-sidebar grid-25 tablet-grid-25 grid-parent" id="right-sidebar">
+        <div class="inside-right-sidebar">
+          <aside id="block-58" class="widget inner-padding widget_block">
+            <div class="tp-sidebar">
+              <div class="tp-popular">
+                <div class="sidebar-posts-header">Popular Texture Packs</div>
+                <p><a href="https://texture-packs.com/resourcepack/faithful-minecraft/">Faithful Texture Pack</a><br> <a
+                    href="https://texture-packs.com/resourcepack/x-ray-minecraft/">XRay Texture Pack</a><br> <a
+                    href="https://texture-packs.com/resourcepack/fresh-animations/">Fresh Animations Texture
+                    Pack</a><br>
+                  <a href="https://texture-packs.com/resourcepack/stay-true/">Stay True Texture Pack</a><br> <a
+                    href="https://texture-packs.com/resourcepack/visible-ores/">Visible Ores Texture Pack</a>
+                </p>
+              </div>
+            </div>
+            <div class="tp-sidebar">
+              <div class="tp-category">
+                <div class="sidebar-posts-header">Categories</div>
+                <div class="bedwars"><a href="https://texture-packs.com/bedwars/"
+                    title="Are you a fan of Minecraft Bedwars? If so, you might be interested in downloading BedWars texture packs from our list.">BedWars
+                    Texture Packs</a></div>
+                <div class="cartoon"><a href="https://texture-packs.com/cartoon/"
+                    title="Browse the best cartoon texture packs for Minecraft.">Cartoon Texture Packs</a></div>
+                <div class="christmas"><a href="https://texture-packs.com/christmas/">Christmas Texture Packs</a></div>
+                <div class="default"><a href="https://texture-packs.com/default/"
+                    title="Check out all default texture packs.">Default Texture Packs</a></div>
+                <div class="faithful"><a href="https://texture-packs.com/faithful-texture-packs/"
+                    title="Faithful resource packs is one of the most popular textures category for Minecraft.">Faithful
+                    Texture Packs</a></div>
+                <div class="fpsboost"><a href="https://texture-packs.com/fps-boost-texture-packs/"
+                    title="You will get no lags and bugs with FPS boost texture packs, because Minecraft runs smoother.">FPS
+                    Boost Texture Packs</a></div>
+                <div class="halloween"><a href="https://texture-packs.com/halloween/"
+                    title="Halloween texture packs modify swords, armor and much more in Minecraft. They are good for PvP modes, like BedWars and SkyWars.">Halloween
+                    Texture Packs</a></div>
+                <div class="marketplace"><a href="https://texture-packs.com/minecraft-marketplace/"
+                    title="This list includes the best Minecraft Marketplace texture packs that you can download for free or you can buy with Minecoins.">Marketplace
+                    Texture Packs</a></div>
+                <div class="medieval"><a href="https://texture-packs.com/medieval/"
+                    title="Check out the best Medieval texture packs for Minecraft.">Medieval Texture Packs</a></div>
+                <div class="mods"><a href="https://instantmods.com/category/minecraft/mods/" target="_blank"
+                    title="Here you can find the best Minecraft mods ready to download and install.">Minecraft Mods</a>
+                </div>
+                <div class="shaders"><a href="https://texture-packs.com/shader-minecraft/"
+                    title="Check out the list of the best Minecraft shaders that you can download for free. Shader packs significantly improve the gameplay.">Minecraft
+                    Shaders</a></div>
+                <div class="optifine"><a href="https://texture-packs.com/optifine-texture-packs/"
+                    title="OptiFine texture packs have features like connected textures, random textures and custom sky. Everything from our download list is free.">OptiFine
+                    Texture Packs</a></div>
+                <div class="pom-pbr"><a href="https://texture-packs.com/pom-pbr/"
+                    title="Download POM / PBR texture packs for Minecraft from our list and install special high-end textures that enhance the game's graphics.">POM
+                    / PBR Texture Packs</a></div>
+                <div class="preview"><a href="https://texture-packs.com/minecraft-preview/"
+                    title="Play the latest Experimental Gameplay version with Minecraft Preview texture packs, which you can download and install for free.">Preview
+                    Texture Packs</a></div>
+                <div class="pvp"><a href="https://texture-packs.com/pvp/"
+                    title="Minecraft PvP texture packs is one of the most popular resource packs. They are perfect for Minecraft servers.">PvP
+                    Texture Packs</a></div>
+                <div class="realistic"><a href="https://texture-packs.com/realistic/"
+                    title="Explore our realistic texture packs list. Add more realism to your Minecraft world with the help of photorealistic textures.">Realistic
+                    Texture Packs</a></div>
+                <div class="sky"><a href="https://texture-packs.com/minecraft-sky-texture-packs/"
+                    title="You can significantly improve Minecraft graphics with sky texture packs. This will enhance the sun, the stars and much more.">Sky
+                    Texture Packs</a></div>
+                <div class="skywars"><a href="https://texture-packs.com/skywars/"
+                    title="SkyWars texture packs are created by PvP players who use their skills to produce beautiful and creative textures for this minigame.">SkyWars
+                    Texture Packs</a></div>
+                <div class="themed"><a href="https://texture-packs.com/themed/"
+                    title="Browse our category of themed texture packs that will completely transform your Minecraft world. You'll be amazed at what we have for you!">Themed
+                    Texture Packs</a></div>
+              </div>
+            </div>
+            <div class="tp-sidebar">
+              <div class="tp-versions">
+                <div class="sidebar-posts-header">Versions</div>
+                <div class="snapshot"><a href="https://texture-packs.com/snapshot/">Snapshot Texture Packs</a></div>
+                <p><a href="https://texture-packs.com/minecraft-1-20-texture-packs/">1.20 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-19-4-texture-packs/">1.19.4 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-19-3-texture-packs/">1.19.3 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-19-2-texture-packs/">1.19.2 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-19-1-texture-packs/">1.19.1 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-19-texture-packs/">1.19 Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-18-texture-packs/">1.18.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-17-texture-packs/">1.17.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-16-5-texture-packs/">1.16.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-15-texture-packs/">1.15.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-14-texture-packs/">1.14.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-13-texture-packs/">1.13.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-12-texture-packs/">1.12.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-11-texture-packs/">1.11.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-10-texture-packs/">1.10.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-9-texture-packs/">1.9.x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/minecraft-1-8-texture-packs/">1.8.x Texture Packs</a></p>
+              </div>
+            </div>
+            <div class="tp-sidebar">
+              <div class="tp-resolution">
+                <div class="sidebar-posts-header">Resolutions</div>
+                <p><a href="https://texture-packs.com/res/1024x1024/">1024x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/512x512/">512x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/256x256/">256x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/128x128/">128x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/64x64/">64x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/32x32/">32x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/16x16/">16x Texture Packs</a><br> <a
+                    href="https://texture-packs.com/res/8x8/">8x Texture Packs</a></p>
+              </div>
+            </div>
+            <div class="tp-sidebar">
+              <div class="tp-popular">
+                <div class="sidebar-posts-header">Popular Shader Packs</div>
+                <p><a href="https://texture-packs.com/shaders/bsl-shaders/">BSL Shaders</a><br> <a
+                    href="https://texture-packs.com/shaders/sildurs-vibrant/">Sildurs Vibrant Shaders</a><br> <a
+                    href="https://texture-packs.com/shaders/complementary-reimagined/">Complementary Reimagined
+                    Shaders</a><br> <a href="https://texture-packs.com/shaders/seus/">SEUS Shaders</a><br> <a
+                    href="https://texture-packs.com/shaders/potato/">Potato Shaders</a></p>
+              </div>
+            </div>
+            <p></p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row site-footer footer-bar-active footer-bar-align-center">
+    <footer class=" xd2 site-info" aria-label="Site" itemtype="https://schema.org/WPFooter" itemscope="">
+      <div class="inside-site-info">
+        <div class="footer-bar">
+          <aside id="block-60" class="widget inner-padding widget_block">
+            <p>© 2020 - 2023 Texture-Packs.com. All rights reserved. This site is not affiliated with Minecraft, Mojang,
+              and Microsoft. Powered by Redstone! <br><a href="https://texture-packs.com/download-minecraft/"
+                tabindex="-1">Download Minecraft</a> | <a href="https://texture-packs.com/terms-and-conditions/"
+                tabindex="-1">Terms and Conditions</a> | <a href="https://texture-packs.com/privacy-policy/"
+                tabindex="-1">Privacy Policy</a> | <a href="https://texture-packs.com/imprint/"
+                tabindex="-1">Imprint</a>
+              | <a href="https://texture-packs.com/contact-us/" tabindex="-1">Contact us</a></p>
+          </aside>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
